@@ -19,7 +19,7 @@ function testMyKnowledge() {
       console.log("You're Right!");
       score += 1;
     } else {
-      console.log("Sorry!, You're Wrong");
+      console.log("Sorry!😓, You're Wrong");
     }
     console.log("Your Current Score is ", score);
     console.log("------------------");
