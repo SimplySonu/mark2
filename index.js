@@ -2,15 +2,12 @@ var readlineSync = require("readline-sync");
 var score = 0;
 
 const quiz = [
-  { question: "What is the main hero/actor first name in KGF Chapter 1 movie ? ", answer: "Yash" },
+  { question: "What is the main hero/actor real first name in KGF Chapter 1 movie ? ", answer: "Yash" },
   { question: "When was the movie released ? ", answer: "2018" },
   { question: "What is the director's first name in KGF Chapter 1 movie ? ", answer: "Prashanth" },
+  { question: "What is the name give to hero in this movie ? ", answer: "Rocky" },
+  { question: "Where is KGF located in India ? ", answer: "Kolar" },
 ];
-
-function getUserName() {
-  var userName = readlineSync.question("May I have your name? ");
-  console.log("Welcome " + userName + "!" + " How much do you know about movies?");
-}
 
 function testMyKnowledge() {
   for (let i = 0; i < quiz.length; i++) {
@@ -34,6 +31,5 @@ function checkScore() {
   }
 }
 
-getUserName();
 testMyKnowledge();
 checkScore()
